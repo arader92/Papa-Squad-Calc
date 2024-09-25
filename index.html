@@ -76,11 +76,11 @@
 
 <body>
     <div id="container">
-        <div id="display"><input id="screen" /></div>
+        <div id="display"><input id="screen" name="input" /></div>
         <div id="btns">
-        <button class="btn num">7</button>
-        <button class="btn num">8</button>
-        <button class="btn num">9</button>
+        <button class="btn num" onclick="enterNumber('7')">7</button>
+        <button class="btn num" onclick="enterNumber('8')">8</button>
+        <button class="btn num" onclick="enterNumber('9')">9</button>
         <button class="btn math">*</button>
         <button class="btn num">4</button>
         <button class="btn num">5</button>
@@ -96,6 +96,12 @@
         <button class="btn math">-</button>
         </div>
     </div>
+    <script>
+      function enterNumber (text) {
+        const numberDisplay = document.getElementById('screen');
+        numberDisplay.value += text;
+      };
+    </script>
 </body>
 
 </html>
