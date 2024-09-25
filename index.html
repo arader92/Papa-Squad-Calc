@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+  
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+          font-family: "Helvetica Neue", Helvetica, sans-serif;
+          background-color: gray
+        }
+        
+        #container {
+            border: 3px solid black;
+          max-width: 600px;
+          height: 600px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-direction: column;
+          border-radius: 4px;
+        }
+        
+        #display {
+            width: calc(100% - 20px);
+          margin: 20px 0 10px 0;
+        }
+        
+        #screen {
+            background: lightgrey;
+            width: 100%;
+          height: 200px;
+        }
+        
+        
+          #btns {
+            width: calc(100% - 20px);
+            margin: 0px 0 10px 0;
+            height: 100%;
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+        
+          .btn {
+            width: 20%;
+            height: 20%;
+            font-size: 16px;
+                cursor: pointer;
+          }
+        
+          .clear {
+              background: red;
+          }
+        
+          .num {
+              background: #2f616b;
+          }
+        
+          .func {
+              background: green;
+          }
+        
+          .math {
+              background: gold;
+          }
+        
+    </style>
+        
+</head>
+
+<body>
+    <div id="container">
+        <div id="display"><input id="screen" /></div>
+        <div id="btns">
+        <button class="btn num">7</button>
+        <button class="btn num">8</button>
+        <button class="btn num">9</button>
+        <button class="btn math">*</button>
+        <button class="btn num">4</button>
+        <button class="btn num">5</button>
+        <button class="btn num">6</button>
+        <button class="btn math">/</button>
+        <button class="btn num">1</button>
+        <button class="btn num">2</button>
+        <button class="btn num">3</button>
+        <button class="btn math">+</button>
+        <button class="btn clear">C</button>
+        <button class="btn num">0</button>
+        <button class="btn func">=</button>
+        <button class="btn math">-</button>
+        </div>
+    </div>
+</body>
+
+</html>
